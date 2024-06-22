@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #007bff;
+}
+
+.container {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  /* position: relative; */
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  width: 300px;
+  z-index: 100; /* Ensure login box is above glass boxes */
+  position: relative; /* Added to position glass boxes relative to the login box */
+}
+
+.login-box h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.textbox {
+  margin-bottom: 20px;
+}
+
+.textbox a {
+  text-align: left;
+  display: block;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #052343;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-box p {
+  color: #fff;
+  font-size: 10px;
+}
+
+.login-box a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.para {
+  text-align: left;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-btn {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.google-btn img {
+  width: 30px;
+  height: 20px;
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkblue;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.brand-title {
+  color: white;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  padding: 10px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.glass-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: -1; /* Ensure glass boxes are below the login box */
+}
+
+.top-left {
+  top: 20px;
+  left: -50px;
+}
+
+.top-right {
+  top: 100px;
+  right: -50px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: -50px;
+}
+/* 
+.bottom-right {
+  bottom: -50px;
+  right: -50px;
+} */
+
+.side_image1 {
+  width: 300px;
+  height: 200px;
+  align-items: start;
+}
+
+.side_image2 {
+  width: 300px;
+  height: 200px;
+}
+/* Media query for medium screens and smaller */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-box {
+    width: 75%;
+    margin-top: 20px;
+  }
+
+  .side_image1,
+  .side_image2 {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
