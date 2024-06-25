@@ -1,7 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #007bff;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .container {
@@ -22,6 +27,7 @@ body {
   width: 300px;
   z-index: 100; /* Ensure login box is above glass boxes */
   position: relative; /* Added to position glass boxes relative to the login box */
+  background-color: black;
 }
 
 .login-box h1 {
@@ -176,7 +182,7 @@ body {
   right: -50px;
 } */
 
-.side_image1 {
+/* .side_image1 {
   width: 300px;
   height: 200px;
   align-items: start;
@@ -185,6 +191,11 @@ body {
 .side_image2 {
   width: 300px;
   height: 200px;
+} */
+
+form label {
+  color: white;
+  font-size: 10px;
 }
 /* Media query for medium screens and smaller */
 @media screen and (max-width: 1024px) {
@@ -194,7 +205,7 @@ body {
   }
 
   .login-box {
-    width: 75%;
+    width: 60%;
     margin-top: 20px;
   }
 
